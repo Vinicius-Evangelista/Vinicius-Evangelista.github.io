@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinicius Evangelista — Portfolio</title>
+    <!-- Fonte Space Grotesk (Google Fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ===============================
+         CABECALHO / NAVEGACAO FIXA
+         =============================== -->
+    <header class="header" id="header">
+        <div class="nav-container">
+            <a href="#" class="nav-brand">Vinicius Evangelista</a>
+
+            <div class="nav-right">
+                <!-- Botao hamburger para mobile -->
+                <button id="menu-toggle" class="menu-btn" aria-label="Abrir menu">&#9776;</button>
+
+                <!-- Navegacao principal -->
+                <ul class="nav-links">
+                    <li><a href="#sobre" class="nav-link">Sobre mim</a></li>
+                    <li><a href="#formacao" class="nav-link">Formacao</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteudo principal -->
+    <main class="main">
+
+        <!-- ===============================
+             SECAO: SOBRE MIM
+             =============================== -->
+        <section id="sobre" class="section">
+            <img src="assets/profile.png" alt="Vinicius Evangelista" class="avatar">
+            <h2>Sobre mim</h2>
+            <p class="about-text">
+                Vinicius Evangelista is a Senior Full Stack Developer based in Brazil, specializing in .NET and cloud solutions with Microsoft Azure. Passionate about building scalable systems and optimizing performance. Currently works at KLAS Research in Utah, USA.
+            </p>
+
+            <!-- Informacoes de contato -->
+            <ul class="contact-list">
+                <li><span class="contact-label">Email:</span> <a href="mailto:viniciusevangelista448@gmail.com">viniciusevangelista448@gmail.com</a></li>
+                <li><span class="contact-label">Telefone:</span> +55 11 98268 5255</li>
+                <li><span class="contact-label">Localizacao:</span> Brazil</li>
+                <li><span class="contact-label">LinkedIn:</span> <a href="https://www.linkedin.com/in/vinicius-evangelista-dev/" target="_blank" rel="noopener noreferrer">vinicius-evangelista-dev</a></li>
+            </ul>
+
+            <!-- Interesses / hobbies -->
+            <h3 class="subsection-title">Interesses</h3>
+            <ul class="hobbies-list">
+                <li>Software architecture</li>
+                <li>Cloud computing</li>
+                <li>Open source contributions</li>
+                <li>Continuous learning</li>
+            </ul>
+        </section>
+
+        <!-- ===============================
+             SECAO: FORMACAO
+             =============================== -->
+        <section id="formacao" class="section">
+            <h2>Formacao</h2>
+
+            <!-- Certificacoes -->
+            <h3 class="subsection-title">Certificacoes</h3>
+            <div class="certifications">
+                <div class="card">
+                    <h3>AWS Associate Developer</h3>
+                    <p class="card-date">Dez 2024 — Dez 2027</p>
+                </div>
+                <div class="card">
+                    <h3>EF SET English C1 Advanced</h3>
+                    <p class="card-date">Dez 2024 — Dez 2030</p>
+                </div>
+            </div>
+
+            <!-- Experiencia profissional -->
+            <h3 class="subsection-title">Experiencia Profissional</h3>
+            <div class="timeline">
+                <div class="card">
+                    <h3>KLAS Research — Senior Full Stack Developer</h3>
+                    <p class="card-date">Jun 2025 — Presente &middot; Utah, USA</p>
+                    <ul>
+                        <li>Identified and resolved an observability issue by tracing OpenTelemetry logs within Azure Application Insights, ensuring full visibility and improving the team's troubleshooting process.</li>
+                        <li>Diagnosed and fixed an N+1 query performance issue on the sellers' profile page, improving response time by 15x.</li>
+                        <li>Implemented Microsoft Entra ID authentication for an internal administration React app system using delegated permissions.</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>BTG Pactual — .NET FullStack Developer</h3>
+                    <p class="card-date">Out 2024 — Jun 2025 &middot; Sao Paulo, Brasil</p>
+                    <ul>
+                        <li>Documented the onboarding process for new team members, achieving a remarkable 75% reduction in adaptation time and enhancing overall team productivity.</li>
+                        <li>Built an algorithm to simplify contract processing, which boosted sprint delivery efficiency by 50%.</li>
+                        <li>Co-architected the data pipeline for integrating existing projects into the Data Lake, ensuring seamless data flow and improved accessibility for analytics purposes.</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>SENAI — .NET Developer</h3>
+                    <p class="card-date">Mai 2023 — Out 2024 &middot; Sao Paulo, Brasil</p>
+                    <ul>
+                        <li>Led the transition to a new cloud provider that improved delivery quality and resulted in a cost reduction of 30%.</li>
+                        <li>Implemented the first CI/CD pipeline for short-lived projects, achieving a 50% reduction in delivery time.</li>
+                        <li>Restructured the Azure DevOps board to improve organization and tracking of features and user stories.</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>Intelitrader — C++ Developer</h3>
+                    <p class="card-date">Jun 2022 — Jan 2023 &middot; Sao Paulo, Brasil</p>
+                    <ul>
+                        <li>Analyzed and mitigated memory leaks within the application, leading to a 30% improvement in overall product performance.</li>
+                        <li>Resolved a critical Windows incompatibility bug in the main system, reducing system crashes by 40% across all client installations.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Habilidades -->
+            <h3 class="subsection-title">Habilidades</h3>
+            <div class="skills-container">
+                <span class="skill-tag">.NET</span>
+                <span class="skill-tag">C#</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">HTML</span>
+                <span class="skill-tag">CSS</span>
+                <span class="skill-tag">Microsoft Azure</span>
+                <span class="skill-tag">ASP.NET</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">Azure DevOps</span>
+                <span class="skill-tag">Excel</span>
+                <span class="skill-tag">MVC</span>
+                <span class="skill-tag">Fabric</span>
+                <span class="skill-tag">Synapse</span>
+            </div>
+        </section>
+
+        <!-- ===============================
+             SECAO: PORTFOLIO
+             =============================== -->
+        <section id="portfolio" class="section">
+            <h2>Portfolio</h2>
+
+            <div class="projects">
+                <!-- Projeto: Zapileiao -->
+                <div class="card">
+                    <h3>Zapileiao</h3>
+                    <p class="card-subtitle">Vehicle auction search platform</p>
+                    <p class="card-tech"><strong>Tech:</strong> Next.js, JavaScript, .NET, C#</p>
+                    <a href="https://zapleilao.com" target="_blank" rel="noopener noreferrer" class="project-link">zapleilao.com</a>
+                </div>
+
+                <!-- Projeto: FluentDiagrams.NET -->
+                <div class="card">
+                    <h3>FluentDiagrams.NET</h3>
+                    <p class="card-subtitle">Diagrams-as-code library for .NET with fluent and expressive syntax.</p>
+                    <p class="card-tech"><strong>Tech:</strong> .NET, C#</p>
+                    <a href="https://github.com/Vinicius-Evangelista/FluentDiagrams.NET" target="_blank" rel="noopener noreferrer" class="project-link">GitHub</a>
+                </div>
+            </div>
+
+            <!-- Comunidade -->
+            <h3 class="subsection-title">Comunidade</h3>
+            <div class="card">
+                <span class="badge">Contributor</span>
+                <h3>Tech Leads Club</h3>
+                <p class="card-subtitle">Community focused on advanced software development, career growth, technical leadership, and management.</p>
+            </div>
+        </section>
+
+        <!-- ===============================
+             SECAO: CONTATO
+             =============================== -->
+        <section id="contato" class="section">
+            <h2>Contato</h2>
+
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="name" placeholder="Seu nome completo" required>
+                    <span class="error-message">Por favor, preencha o campo nome.</span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+                    <span class="error-message">Por favor, insira um e-mail valido.</span>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem</label>
+                    <textarea id="message" name="message" placeholder="Escreva sua mensagem..." required></textarea>
+                    <span class="error-message">Por favor, escreva uma mensagem.</span>
+                </div>
+                <button type="submit" class="submit-btn">Enviar</button>
+            </form>
+
+            <!-- Mensagem de sucesso (oculta por padrao) -->
+            <div id="success-message">
+                <p>Mensagem enviada com sucesso!</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===============================
+         RODAPE
+         =============================== -->
+    <footer>
+        <p>&copy; 2025 Vinicius Evangelista. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Script JavaScript puro (vanilla), sem frameworks -->
+    <script src="js/main.js" defer></script>
+</body>
+</html>
