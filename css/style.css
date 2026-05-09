@@ -1,21 +1,11 @@
-/* ==========================================================================
-   PORTFOLIO WEBSITE - PURE CSS3 STYLESHEET
-   University Assignment - No frameworks used
-   Dark theme only, color palette from personal portfolio
-   Font: Space Grotesk (Google Fonts)
-   ========================================================================== */
-
-/* ==========================================================================
-   1. CSS CUSTOM PROPERTIES (COLOR PALETTE)
-   Based on the portfolio color scheme at github.com/Vinicius-Evangelista/portifolio
-   ========================================================================== */
+/* Portfolio - CSS3 puro, sem frameworks
+   Tema unico (dark) com paleta de cores do portfolio pessoal */
 
 :root {
   --background: #1b1f24;
   --secondary-background: #1E2939;
   --foreground: #FFFFFF;
   --card: #2D343F;
-  --card-foreground: #FFFFFF;
   --primary: #2E81FF;
   --primary-hover: #075FE4;
   --muted-foreground: #8895AA;
@@ -25,18 +15,10 @@
   --skill-bg: #1E2939;
   --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   --radius: 0.5rem;
-
   --font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
-/* ==========================================================================
-   2. GLOBAL STYLES & RESETS
-   Base typography, body defaults, and section spacing
-   ========================================================================== */
-
-html {
-  scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 body {
   font-family: var(--font-family);
@@ -46,10 +28,7 @@ body {
   padding: 0;
 }
 
-/* Padding superior para compensar o header fixo */
-.main {
-  padding-top: 70px;
-}
+.main { padding-top: 70px; }
 
 .section {
   padding: 80px 20px;
@@ -66,26 +45,12 @@ h2 {
   font-weight: 700;
 }
 
-h3 {
-  margin-top: 0;
-  color: var(--primary);
-  font-weight: 700;
-}
+h3 { margin-top: 0; color: var(--primary); font-weight: 700; }
 
-a {
-  color: var(--primary);
-  text-decoration: none;
-}
+a { color: var(--primary); text-decoration: none; }
+a:hover { text-decoration: underline; }
 
-a:hover {
-  text-decoration: underline;
-}
-
-/* ==========================================================================
-   3. FIXED NAVIGATION (HEADER)
-   Top navigation bar with brand and links
-   ========================================================================== */
-
+/* Header / Navegacao fixa */
 .header {
   position: fixed;
   top: 0;
@@ -104,23 +69,10 @@ a:hover {
   padding: 15px 20px;
 }
 
-.nav-brand {
-  font-size: 1.3rem;
-  font-weight: bold;
-  color: var(--primary);
-  text-decoration: none;
-}
+.nav-brand { font-size: 1.3rem; font-weight: bold; color: var(--primary); text-decoration: none; }
+.nav-brand:hover { text-decoration: none; }
+.nav-right { display: flex; align-items: center; }
 
-.nav-brand:hover {
-  text-decoration: none;
-}
-
-.nav-right {
-  display: flex;
-  align-items: center;
-}
-
-/* Botao hamburger - visivel apenas em mobile */
 .menu-btn {
   display: none;
   background: none;
@@ -131,13 +83,7 @@ a:hover {
   margin-right: 15px;
 }
 
-.nav-links {
-  display: flex;
-  list-style: none;
-  gap: 25px;
-  margin: 0;
-  padding: 0;
-}
+.nav-links { display: flex; list-style: none; gap: 25px; margin: 0; padding: 0; }
 
 .nav-links a {
   color: var(--foreground);
@@ -148,18 +94,13 @@ a:hover {
   transition: 0.3s;
 }
 
-.nav-links a:hover,
-.nav-links a.active {
+.nav-links a:hover, .nav-links a.active {
   border-bottom-color: var(--primary);
   color: var(--primary);
   text-decoration: none;
 }
 
-/* ==========================================================================
-   4. AVATAR (Secao Sobre mim)
-   Circulo com iniciais como placeholder de foto de perfil
-   ========================================================================== */
-
+/* Avatar */
 .avatar {
   width: 150px;
   height: 150px;
@@ -170,57 +111,18 @@ a:hover {
   display: block;
 }
 
-/* Texto de apresentacao */
-.about-text {
-  font-size: 1.1rem;
-  line-height: 1.7;
-  margin-bottom: 25px;
-  max-width: 800px;
-  color: var(--muted-foreground);
-}
+.about-text { font-size: 1.1rem; line-height: 1.7; margin-bottom: 25px; max-width: 800px; color: var(--muted-foreground); }
 
-/* ==========================================================================
-   5. CONTACT LIST (Secao Sobre mim)
-   Lista de informacoes de contato pessoais
-   ========================================================================== */
+/* Contato */
+.contact-list { list-style: none; padding: 0; margin: 20px 0; }
+.contact-list li { padding: 8px 0; font-size: 1rem; color: var(--muted-foreground); }
+.contact-label { font-weight: 600; color: var(--foreground); }
 
-.contact-list {
-  list-style: none;
-  padding: 0;
-  margin: 20px 0;
-}
+/* Subtitulo de secao */
+.subsection-title { font-size: 1.3rem; margin-top: 30px; margin-bottom: 15px; color: var(--primary); }
 
-.contact-list li {
-  padding: 8px 0;
-  font-size: 1rem;
-  color: var(--muted-foreground);
-}
-
-.contact-label {
-  font-weight: 600;
-  color: var(--foreground);
-}
-
-/* ==========================================================================
-   6. HOBBIES / INTERESSES
-   Lista simples de interesses pessoais
-   ========================================================================== */
-
-.subsection-title {
-  font-size: 1.3rem;
-  margin-top: 30px;
-  margin-bottom: 15px;
-  color: var(--primary);
-}
-
-.hobbies-list {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
+/* Hobbies */
+.hobbies-list { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 10px; }
 .hobbies-list li {
   background: var(--skill-bg);
   padding: 8px 16px;
@@ -230,23 +132,10 @@ a:hover {
   color: var(--muted-foreground);
 }
 
-/* ==========================================================================
-   7. CERTIFICACOES
-   Grid simples para cartoes de certificacao
-   ========================================================================== */
+/* Certificacoes grid */
+.certifications { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px; margin-bottom: 30px; }
 
-.certifications {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 15px;
-  margin-bottom: 30px;
-}
-
-/* ==========================================================================
-   8. CARDS (Experiencia, Projetos, Educacao)
-   Componente reutilizavel de cartao com efeito de elevacao ao passar o mouse
-   ========================================================================== */
-
+/* Cards */
 .card {
   background: var(--card);
   border-radius: var(--radius);
@@ -257,68 +146,17 @@ a:hover {
   transition: 0.3s;
 }
 
-.card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
-}
+.card:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4); }
+.card .card-date { color: var(--muted-foreground); font-size: 0.85rem; font-style: italic; margin-top: 0; margin-bottom: 10px; }
+.card .card-subtitle { color: var(--muted-foreground); font-size: 0.95rem; margin-bottom: 10px; }
+.card .card-tech { color: var(--muted-foreground); font-size: 0.9rem; margin-bottom: 10px; }
+.card ul { padding-left: 20px; }
+.card li { margin-bottom: 8px; line-height: 1.5; font-size: 0.95rem; color: var(--muted-foreground); }
 
-.card .card-date {
-  color: var(--muted-foreground);
-  font-size: 0.85rem;
-  font-style: italic;
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-
-.card .card-subtitle {
-  color: var(--muted-foreground);
-  font-size: 0.95rem;
-  margin-bottom: 10px;
-}
-
-.card .card-tech {
-  color: var(--muted-foreground);
-  font-size: 0.9rem;
-  margin-bottom: 10px;
-}
-
-.card ul {
-  padding-left: 20px;
-}
-
-.card li {
-  margin-bottom: 8px;
-  line-height: 1.5;
-  font-size: 0.95rem;
-  color: var(--muted-foreground);
-}
-
-/* ==========================================================================
-   9. TIMELINE (Experiencia Profissional)
-   Linha vertical com pontos marcadores em cada cartao de experiencia
-   ========================================================================== */
-
-.timeline {
-  position: relative;
-  padding-left: 30px;
-  margin-bottom: 30px;
-}
-
-.timeline::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 3px;
-  background: var(--primary);
-  border-radius: 2px;
-}
-
-.timeline .card {
-  position: relative;
-}
-
+/* Timeline */
+.timeline { position: relative; padding-left: 30px; margin-bottom: 30px; }
+.timeline::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 3px; background: var(--primary); border-radius: 2px; }
+.timeline .card { position: relative; }
 .timeline .card::before {
   content: '';
   position: absolute;
@@ -331,18 +169,8 @@ a:hover {
   border: 3px solid var(--background);
 }
 
-/* ==========================================================================
-   10. SKILLS TAGS
-   Tags em forma de pilula com preenchimento primary ao passar o mouse
-   ========================================================================== */
-
-.skills-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 10px;
-}
-
+/* Skills */
+.skills-container { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
 .skill-tag {
   background: var(--skill-bg);
   color: var(--primary);
@@ -354,21 +182,10 @@ a:hover {
   transition: 0.3s;
   cursor: default;
 }
+.skill-tag:hover { background: var(--primary); color: white; }
 
-.skill-tag:hover {
-  background: var(--primary);
-  color: white;
-}
-
-/* ==========================================================================
-   11. PROJECTS & LINKS
-   Secao de projetos com links estilo tracejado
-   ========================================================================== */
-
-.projects {
-  margin-bottom: 20px;
-}
-
+/* Projetos */
+.projects { margin-bottom: 20px; }
 .project-link {
   display: inline-block;
   margin-top: 10px;
@@ -378,13 +195,8 @@ a:hover {
   border-bottom: 1px dashed var(--primary);
   transition: 0.3s;
 }
+.project-link:hover { border-bottom-style: solid; text-decoration: none; }
 
-.project-link:hover {
-  border-bottom-style: solid;
-  text-decoration: none;
-}
-
-/* Badge para comunidade */
 .badge {
   display: inline-block;
   background: var(--primary);
@@ -396,29 +208,12 @@ a:hover {
   margin-bottom: 8px;
 }
 
-/* ==========================================================================
-   12. CONTACT FORM
-   Formulario estilizado com estados de foco, validacao e botao de envio
-   ========================================================================== */
+/* Formulario de contato */
+#contact-form { max-width: 600px; margin: 0 auto; }
+.form-group { margin-bottom: 20px; }
+.form-group label { display: block; margin-bottom: 5px; font-weight: 500; color: var(--foreground); }
 
-#contact-form {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.form-group {
-  margin-bottom: 20px;
-}
-
-.form-group label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: 500;
-  color: var(--foreground);
-}
-
-.form-group input,
-.form-group textarea {
+.form-group input, .form-group textarea {
   width: 100%;
   padding: 12px;
   border: 2px solid var(--border);
@@ -431,43 +226,20 @@ a:hover {
   font-family: var(--font-family);
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
+.form-group input:focus, .form-group textarea:focus {
   outline: none;
   border-color: var(--primary);
   box-shadow: 0 0 0 3px rgba(46, 129, 255, 0.2);
 }
 
-/* Placeholder text color */
-.form-group input::placeholder,
-.form-group textarea::placeholder {
-  color: var(--muted-foreground);
-}
+.form-group input::placeholder, .form-group textarea::placeholder { color: var(--muted-foreground); }
 
-/* Mensagem de erro de validacao */
-.form-group .error-message {
-  color: var(--destructive);
-  font-size: 0.85rem;
-  margin-top: 5px;
-  display: none;
-}
+.form-group .error-message { color: var(--destructive); font-size: 0.85rem; margin-top: 5px; display: none; }
+.form-group .error-message.visible { display: block; }
+.form-group input.invalid, .form-group textarea.invalid { border-color: var(--destructive); }
 
-.form-group .error-message.visible {
-  display: block;
-}
+textarea { min-height: 120px; resize: vertical; }
 
-/* Estilo de campo invalido apos validacao */
-.form-group input.invalid,
-.form-group textarea.invalid {
-  border-color: var(--destructive);
-}
-
-textarea {
-  min-height: 120px;
-  resize: vertical;
-}
-
-/* Botao de envio do formulario */
 .submit-btn {
   background: var(--primary);
   color: white;
@@ -480,13 +252,8 @@ textarea {
   font-family: var(--font-family);
   transition: 0.3s;
 }
+.submit-btn:hover { background: var(--primary-hover); transform: translateY(-2px); }
 
-.submit-btn:hover {
-  background: var(--primary-hover);
-  transform: translateY(-2px);
-}
-
-/* Mensagem de sucesso - exibida apos envio simulado */
 #success-message {
   display: none;
   background: var(--success);
@@ -498,28 +265,14 @@ textarea {
   font-size: 1.1rem;
   animation: fadeIn 0.5s ease;
 }
+#success-message.visible { display: block; }
 
-#success-message.visible {
-  display: block;
-}
-
-/* Animacao de aparecimento suave */
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
-/* ==========================================================================
-   13. FOOTER
-   Rodape simples centralizado com borda superior e texto secundario
-   ========================================================================== */
-
+/* Footer */
 footer {
   background: var(--card);
   text-align: center;
@@ -529,19 +282,9 @@ footer {
   margin-top: 40px;
 }
 
-/* ==========================================================================
-   14. RESPONSIVE DESIGN - TABLET (max-width: 768px)
-   Exibe menu hamburger, empilha links verticalmente, ajusta espacamento
-   ========================================================================== */
-
+/* Responsivo - Tablet */
 @media (max-width: 768px) {
-  /* Exibe o botao hamburger */
-  .menu-btn {
-    display: block;
-    order: -1;
-  }
-
-  /* Esconde links por padrao; exibidos quando .active e ativado via JS */
+  .menu-btn { display: block; order: -1; }
   .nav-links {
     display: none;
     position: absolute;
@@ -555,64 +298,20 @@ footer {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     border-top: 1px solid var(--border);
   }
-
-  /* Estado aberto do menu mobile */
-  .nav-links.active {
-    display: flex;
-  }
-
-  .nav-links a {
-    padding: 10px 0;
-  }
-
-  /* Reduz Padding das secoes em telas menores */
-  .section {
-    padding: 60px 15px;
-  }
-
-  h2 {
-    font-size: 1.5rem;
-  }
-
-  /* Ajusta linha e pontos da timeline para telas menores */
-  .timeline::before {
-    left: 15px;
-  }
-
-  .timeline {
-    padding-left: 35px;
-  }
-
-  .timeline .card::before {
-    left: -26px;
-  }
-
-  /* Certificacoes em coluna unica */
-  .certifications {
-    grid-template-columns: 1fr;
-  }
+  .nav-links.active { display: flex; }
+  .nav-links a { padding: 10px 0; }
+  .section { padding: 60px 15px; }
+  h2 { font-size: 1.5rem; }
+  .timeline::before { left: 15px; }
+  .timeline { padding-left: 35px; }
+  .timeline .card::before { left: -26px; }
+  .certifications { grid-template-columns: 1fr; }
 }
 
-/* ==========================================================================
-   15. RESPONSIVE DESIGN - MOBILE (max-width: 480px)
-   Reducoes adicionais para telas de celular pequenas
-   ========================================================================== */
-
+/* Responsivo - Mobile */
 @media (max-width: 480px) {
-  .nav-brand {
-    font-size: 1.1rem;
-  }
-
-  .card {
-    padding: 15px;
-  }
-
-  .skills-container {
-    gap: 8px;
-  }
-
-  .skill-tag {
-    padding: 6px 12px;
-    font-size: 0.8rem;
-  }
+  .nav-brand { font-size: 1.1rem; }
+  .card { padding: 15px; }
+  .skills-container { gap: 8px; }
+  .skill-tag { padding: 6px 12px; font-size: 0.8rem; }
 }

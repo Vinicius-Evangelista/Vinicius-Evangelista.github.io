@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vinicius Evangelista — Portfolio</title>
-    <!-- Fonte Space Grotesk (Google Fonts) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -12,18 +11,11 @@
 </head>
 <body>
 
-    <!-- ===============================
-         CABECALHO / NAVEGACAO FIXA
-         =============================== -->
     <header class="header" id="header">
         <div class="nav-container">
             <a href="#" class="nav-brand">Vinicius Evangelista</a>
-
             <div class="nav-right">
-                <!-- Botao hamburger para mobile -->
                 <button id="menu-toggle" class="menu-btn" aria-label="Abrir menu">&#9776;</button>
-
-                <!-- Navegacao principal -->
                 <ul class="nav-links">
                     <li><a href="#sobre" class="nav-link">Sobre mim</a></li>
                     <li><a href="#formacao" class="nav-link">Formacao</a></li>
@@ -34,28 +26,20 @@
         </div>
     </header>
 
-    <!-- Conteudo principal -->
     <main class="main">
 
-        <!-- ===============================
-             SECAO: SOBRE MIM
-             =============================== -->
         <section id="sobre" class="section">
             <img src="assets/profile.png" alt="Vinicius Evangelista" class="avatar">
             <h2>Sobre mim</h2>
             <p class="about-text">
                 Vinicius Evangelista is a Senior Full Stack Developer based in Brazil, specializing in .NET and cloud solutions with Microsoft Azure. Passionate about building scalable systems and optimizing performance. Currently works at KLAS Research in Utah, USA.
             </p>
-
-            <!-- Informacoes de contato -->
             <ul class="contact-list">
                 <li><span class="contact-label">Email:</span> <a href="mailto:viniciusevangelista448@gmail.com">viniciusevangelista448@gmail.com</a></li>
                 <li><span class="contact-label">Telefone:</span> +55 11 98268 5255</li>
                 <li><span class="contact-label">Localizacao:</span> Brazil</li>
                 <li><span class="contact-label">LinkedIn:</span> <a href="https://www.linkedin.com/in/vinicius-evangelista-dev/" target="_blank" rel="noopener noreferrer">vinicius-evangelista-dev</a></li>
             </ul>
-
-            <!-- Interesses / hobbies -->
             <h3 class="subsection-title">Interesses</h3>
             <ul class="hobbies-list">
                 <li>Software architecture</li>
@@ -65,13 +49,9 @@
             </ul>
         </section>
 
-        <!-- ===============================
-             SECAO: FORMACAO
-             =============================== -->
         <section id="formacao" class="section">
             <h2>Formacao</h2>
 
-            <!-- Certificacoes -->
             <h3 class="subsection-title">Certificacoes</h3>
             <div class="certifications">
                 <div class="card">
@@ -84,7 +64,18 @@
                 </div>
             </div>
 
-            <!-- Experiencia profissional -->
+            <h3 class="subsection-title">Idiomas</h3>
+            <div class="certifications">
+                <div class="card">
+                    <h3>Ingles — C1 Advanced</h3>
+                    <p class="card-date">Certificado EF SET</p>
+                </div>
+                <div class="card">
+                    <h3>Portugues — Nativo</h3>
+                    <p class="card-date">Lingua materna</p>
+                </div>
+            </div>
+
             <h3 class="subsection-title">Experiencia Profissional</h3>
             <div class="timeline">
                 <div class="card">
@@ -127,7 +118,6 @@
                 </div>
             </div>
 
-            <!-- Habilidades -->
             <h3 class="subsection-title">Habilidades</h3>
             <div class="skills-container">
                 <span class="skill-tag">.NET</span>
@@ -147,22 +137,15 @@
             </div>
         </section>
 
-        <!-- ===============================
-             SECAO: PORTFOLIO
-             =============================== -->
         <section id="portfolio" class="section">
             <h2>Portfolio</h2>
-
             <div class="projects">
-                <!-- Projeto: Zapileiao -->
                 <div class="card">
                     <h3>Zapileiao</h3>
                     <p class="card-subtitle">Vehicle auction search platform</p>
                     <p class="card-tech"><strong>Tech:</strong> Next.js, JavaScript, .NET, C#</p>
                     <a href="https://zapleilao.com" target="_blank" rel="noopener noreferrer" class="project-link">zapleilao.com</a>
                 </div>
-
-                <!-- Projeto: FluentDiagrams.NET -->
                 <div class="card">
                     <h3>FluentDiagrams.NET</h3>
                     <p class="card-subtitle">Diagrams-as-code library for .NET with fluent and expressive syntax.</p>
@@ -170,8 +153,6 @@
                     <a href="https://github.com/Vinicius-Evangelista/FluentDiagrams.NET" target="_blank" rel="noopener noreferrer" class="project-link">GitHub</a>
                 </div>
             </div>
-
-            <!-- Comunidade -->
             <h3 class="subsection-title">Comunidade</h3>
             <div class="card">
                 <span class="badge">Contributor</span>
@@ -180,12 +161,8 @@
             </div>
         </section>
 
-        <!-- ===============================
-             SECAO: CONTATO
-             =============================== -->
         <section id="contato" class="section">
             <h2>Contato</h2>
-
             <form id="contact-form">
                 <div class="form-group">
                     <label for="name">Nome</label>
@@ -204,8 +181,6 @@
                 </div>
                 <button type="submit" class="submit-btn">Enviar</button>
             </form>
-
-            <!-- Mensagem de sucesso (oculta por padrao) -->
             <div id="success-message">
                 <p>Mensagem enviada com sucesso!</p>
             </div>
@@ -213,14 +188,10 @@
 
     </main>
 
-    <!-- ===============================
-         RODAPE
-         =============================== -->
     <footer>
         <p>&copy; 2025 Vinicius Evangelista. Todos os direitos reservados.</p>
     </footer>
 
-    <!-- Script JavaScript puro (vanilla), sem frameworks -->
     <script src="js/main.js" defer></script>
 </body>
 </html>
